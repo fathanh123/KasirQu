@@ -82,7 +82,7 @@ const SyaratKetentuan = () => {
                 <h1 className="text-center text-[18px] font-semibold">Saat ini anda belum memiliki cabang</h1>
                 <p className="text-center text-[14px] font-normal text-slate-500">Tambahkan data toko jika anda ingin menambah cabang</p>
                 <div className='w-[556px] p-[17px] border rounded-[8px] grid gap-[12px]'>
-                    <h1 className='text-[16px] font-[500]'>Gunakan sirqu untuk mengelola cabang anda</h1>
+                    <h1 className='text-[16px] font-[500]'>Gunakan KasirQu untuk mengelola cabang anda</h1>
                     <div>
                         <p className='text-[14px]'>Saat ini, Anda belum memiliki cabang yang terdaftar. Fitur kelola cabang memungkinkan Anda untuk:</p>
                         <div className='pl-[10px]'>
@@ -102,7 +102,7 @@ const SyaratKetentuan = () => {
                         <DialogContent className="sm:max-w-[561px] grid gap-[16px] p-[24px]">
                             <div className='flex justify-between'>
                                 <DialogHeader>
-                                    <DialogTitle className='text-[18px] py-[16px] w-[294px]'>Syarat dan Ketentuan Pengelolaan Cabang di Sirqu</DialogTitle>
+                                    <DialogTitle className='text-[18px] py-[16px] w-[294px]'>Syarat dan Ketentuan Pengelolaan Cabang di KasirQu</DialogTitle>
                                 </DialogHeader>
                                 <DialogClose asChild>
                                     <Button type="button" variant="ghost">
@@ -112,8 +112,8 @@ const SyaratKetentuan = () => {
                             </div>
                             <div className="grid gap-4 py-4 pt-[6px] text-[14px]">
                                 <div>
-                                    <p>Fitur Kelola Cabang di Sirqu memungkinkan pengguna untuk menambahkan, mengelola, dan menghapus cabang bisnis dengan mudah.
-                                        Pengguna bertanggung jawab penuh atas data yang dikelola serta harus memastikan bahwa setiap cabang beroperasi sesuai hukum yang berlaku..Sirqu berhak untuk memperbarui ketentuan ini sewaktu-waktu.
+                                    <p>Fitur Kelola Cabang di KasirQu memungkinkan pengguna untuk menambahkan, mengelola, dan menghapus cabang bisnis dengan mudah.
+                                        Pengguna bertanggung jawab penuh atas data yang dikelola serta harus memastikan bahwa setiap cabang beroperasi sesuai hukum yang berlaku..KasirQu berhak untuk memperbarui ketentuan ini sewaktu-waktu.
                                     </p>
                                     <p>Poin ketentuan:</p>
                                     <div className='pl-[10px]'>
@@ -124,7 +124,7 @@ const SyaratKetentuan = () => {
                                             <li>Keamanan Data: Pengguna wajib menjaga keamanan akun dan data cabang.</li>
                                             <li>Kepatuhan Hukum: Pengguna harus memastikan cabang memenuhi regulasi setempat.</li>
                                             <li>Penghapusan Cabang: Cabang yang tidak aktif dapat dihapus, namun data terkait tetap disimpan.</li>
-                                            <li>Perubahan Syarat: Sirqu dapat memperbarui syarat dan ketentuan sesuai kebutuhan</li>
+                                            <li>Perubahan Syarat: KasirQu dapat memperbarui syarat dan ketentuan sesuai kebutuhan</li>
                                         </ul>
                                     </div>
                                 </div>

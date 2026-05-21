@@ -102,9 +102,9 @@ const PricingPlan = () => {
                 <div className='gap-[25px] flex flex-col items-center justify-center'>
                     <div className='flex gap-2 items-center'>
                         <Celo size="30" variant="Bulk" className="mt-[10px] mb-[10px]" />
-                        <h3 className='text-[24px] font-bold'>Sirqu</h3>
+                        <h3 className='text-[24px] font-bold'>KasirQu</h3>
                     </div>
-                    <h1 className='text-[36px] font-semibold'>Upgrade Bisnis Anda dengan Sirqu</h1>
+                    <h1 className='text-[36px] font-semibold'>Upgrade Bisnis Anda dengan KasirQu</h1>
                     <p className=' text-[20px] font-medium text-[#717179]'>Pilih paket terbaik untuk mengelola transaksi dan meningkatkan penjualan Anda.</p>
                     <TabsList className="h-[32px] text-[14px] font-medium bg-[#F4F4F5]">
                         <TabsTrigger value="perbulan" className=' w-[179px] px-[12px] py-[6px] rounded-[4px]'>Perbulan</TabsTrigger>

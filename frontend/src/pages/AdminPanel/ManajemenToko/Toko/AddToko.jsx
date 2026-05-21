@@ -138,7 +138,7 @@ const AddToko = ({ open, onClose }) => {
                         onClick={handleOverlayClick}
                     >
                         <div className='grid gap-[6px]'>
-                            <h2 className="text-[18px] font-semibold">Selamat Datang di Sirqu!</h2>
+                            <h2 className="text-[18px] font-semibold">Selamat Datang di KasirQu!</h2>
                             <p className="text-[13.563px] font-normal text-slate-500">Untuk melanjutkan menggunakan aplikasi anda harus mengisi data toko utama anda terlebih dahulu.</p>
                         </div>
                         <div className="flex justify-end">
@@ -247,7 +247,7 @@ const AddToko = ({ open, onClose }) => {
                     >
                         <div className='grid gap-[16px] place-items-center mt-[24px]'>
                             <TickCircle size="40" variant="Bold" />
-                            <h1 className='text-[16px] font-semibold'>Proses Berhasil! Selamat datang di Sirqu</h1>
+                            <h1 className='text-[16px] font-semibold'>Proses Berhasil! Selamat datang di KasirQu</h1>
                         </div>
                         <div className="flex justify-center mb-[24px]">
                             <Button className="h-[36px] text-[14px]" onClick={onClose}>Selesai</Button>

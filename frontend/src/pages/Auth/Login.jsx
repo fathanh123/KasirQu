@@ -108,7 +108,7 @@ const Login = () => {
         <div className="container mx-auto flex justify-center items-center min-h-screen">
              <Toaster />
             <div className="mx-auto w-full max-w-[450px] pt-[52px] pb-[52px] ">
-                <h1 className='text-center text-[30px] font-semibold'>Masuk ke akun anda</h1>
+                <h1 className='text-center text-[30px] font-semibold text-[#c7a07a]'>Masuk ke akun anda</h1>
                 <p className="text-[14px] text-center font-medium  text-gray-500 mt-[16px] mb-[36px]">
                     Masukkan email dan password anda
                 </p>
@@ -163,7 +163,7 @@ const Login = () => {
                             Lupa Password?
                         </Link>
                     </div>
-                    <Button onClick={handleLogin} className="w-full h-[40px]  text-[14px] font-medium">
+                    <Button onClick={handleLogin} className="w-full h-[40px]  text-[14px] font-medium bg-[#c7a07a] hover:bg-[#c7a07a]/70">
                         Masuk
                     </Button>
                     <Button onClick={() => navigate('/auth/login-token')} variant="outline"  className="w-full h-[40px]  text-[14px] font-medium" >
@@ -175,7 +175,7 @@ const Login = () => {
                         <div className="flex-1 border-b border-gray-300"></div>
                     </div>
                     <div className='grid gap-4'>
-                    <Button type="submit" className="w-full h-[40px]  text-[14px] font-medium" onClick={() => navigate('/auth/register')}>
+                    <Button type="submit" className="w-full h-[40px]  text-[14px] font-medium bg-[#c7a07a] hover:bg-[#c7a07a]/70" onClick={() => navigate('/auth/register')}>
                     Daftar Akun Baru
                     </Button>
                     <Button onClick={() => navigate('/pricing')} variant="outline"  className="w-full h-[40px]  text-[14px] font-medium" >
