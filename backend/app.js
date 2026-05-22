@@ -110,7 +110,9 @@ const initializeDatabase = async () => {
 // Start the server
 initializeDatabase()
   .then(() => {
-    app.listen(PORT, () => console.log(`Server running on port ${PORT} http://localhost:5000/api-sirqu/docs`));
+    app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`);
+    });
   })
   .catch((error) => {
     console.error("Error starting the server:", error);
