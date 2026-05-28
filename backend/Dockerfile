@@ -19,7 +19,7 @@ RUN npm ci
 COPY . .
 
 # The backend application listens on port 5000.
-EXPOSE 5177
+EXPOSE 5000
 
 # The command to run the application.
 # `node app.js` is used for production instead of `nodemon`.

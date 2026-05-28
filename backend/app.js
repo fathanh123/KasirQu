@@ -39,11 +39,21 @@ dotenv.config();
 
 const app = express();
 
-// Konfigurasi CORS
+// Konfigurasi CORS yang lebih fleksibel untuk production dan development
+const allowedOrigins = process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : ['http://localhost:5173'];
+
 app.use(cors({
-  origin: "http://localhost:5173", // Ganti dengan URL frontend Anda
-  methods: ["GET", "POST", "PUT", "DELETE"], // Metode yang diizinkan
-  allowedHeaders: ["Content-Type", "Authorization"], // Header yang diizinkan
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 }));
 
 app.use(express.json());

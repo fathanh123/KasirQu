@@ -7,7 +7,8 @@ services:
       dockerfile: Dockerfile
     env_file: ./.env
     ports:
-      - "5000:5000"
+      # Map port 5177 on the host to port 5000 in the container
+      - "5177:5000"
     volumes:
       # Mount the images directory to persist uploaded files
       - ./backend/images:/app/backend/images
